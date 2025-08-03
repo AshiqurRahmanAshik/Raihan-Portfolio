@@ -189,7 +189,7 @@ header {
   margin-bottom: 40px;
 }
 
-.section-title h2 {
+.section-title h1 {
   font-size: 2rem;
   color: #1d3557;
   margin-bottom: 10px;
@@ -198,6 +198,7 @@ header {
 .section-title p {
   color: #555;
   font-size: 1rem;
+  margin-top: 10px;
 }
 
 .card-container {
