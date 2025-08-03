@@ -480,12 +480,13 @@ header {
 }
 
 @media (max-width: 600px) {
+  .hero,
   .education,
   .research-projects,
   .awards,
   .extracurricular {
-    margin-top: 30px;
     padding: 10px;
+    margin-bottom: 120px;
   }
   .research-projects {
     margin-top: 30px;
