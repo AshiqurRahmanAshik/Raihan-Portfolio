@@ -178,7 +178,7 @@ header {
 /* Research & Projects Section */
 .research-projects {
   max-width: 1200px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 50px auto;
   padding: 60px 20px 100px 20px;
   background-color: #f9fafb;
   border-radius: 8px;
@@ -479,6 +479,21 @@ header {
 }
 
 @media (max-width: 600px) {
+  .education,
+  .research-projects,
+  .awards,
+  .extracurricular {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .research-projects {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
   .hero-content h1 {
     font-size: 2rem;
   }
