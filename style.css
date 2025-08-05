@@ -212,7 +212,16 @@ header {
     grid-template-columns: 1fr; /* 1 column on smaller devices */
   }
 }
-
+button {
+  display: inline-block;
+  height: 30px;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(55, 72, 80);
+}
 .card {
   background: #fff;
   border-radius: 10px;
@@ -301,6 +310,93 @@ header {
   color: #444;
   line-height: 1.5;
   margin-bottom: 6px;
+}
+/* Skills Section */
+.skills-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Carousel Section */
+.carousel-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for image slider */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Mobile Responsive for Carousel */
+@media (max-width: 768px) {
+  .carousel-track {
+    gap: 10px;
+    animation-duration: 15s; /* faster for smaller screens */
+  }
+
+  .carousel-track img {
+    width: 200px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    padding: 30px 10px;
+  }
+
+  .carousel-track {
+    gap: 8px;
+    animation-duration: 8s;
+  }
+
+  .carousel-track img {
+    width: 150px;
+    height: 100px;
+  }
 }
 
 /* Awards & Honors Section */
