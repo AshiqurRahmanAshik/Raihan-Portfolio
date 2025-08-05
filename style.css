@@ -170,7 +170,7 @@ header {
 .hero-image img {
   width: 280px;
   height: 280px;
-  object-fit: cover;
+  object-fit: c;
   border-radius: 50%;
   border: 5px solid #0077b6;
 }
@@ -350,7 +350,7 @@ button:hover {
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
 .carousel-track img {
@@ -367,7 +367,7 @@ button:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
 /* Mobile Responsive for Carousel */
@@ -663,5 +663,53 @@ button:hover {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+/* Video Section */
+.video-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.video-section .section-title {
+  margin-bottom: 40px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-container video {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Stack videos vertically on tablets and smaller */
+@media (max-width: 900px) {
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container video {
+    width: 90%;
+  }
+}
+
+/* Tighter spacing and padding for small mobile screens */
+@media (max-width: 480px) {
+  .video-section {
+    padding: 40px 10px;
+  }
+
+  .video-container {
+    gap: 15px;
   }
 }
